@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <p>hehe1</p>
+    <p>{{ file_list }}</p>
+
+
+{% for file in file_list %}
+    <p>{{ file }}<a href="{% url 'www:download' %}">下载</a></p>
+{% endfor %}
+
+</head>
+<body>
+
+</body>
+</html>

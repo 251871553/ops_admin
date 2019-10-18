@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'www/css/reset.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'www/css/supersized.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'www/css/style.css' %}" />
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>jstack</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="page-container">
+            <h1>jstack</h1>
+            <form action="{% url 'ops_api:k8s_api' %}" method="post" enctype="multipart/form-data"  >
+                {% csrf_token %}
+            <!--    {{uf.as_p}}   -->
+                 <p>输入pod的ip地址</p>
+                <input type="text" name="ip_addr" class="username" placeholder="pod_ip">
+                <!--input type="password" name="password" class="password" placeholder="Password"-->
+                <button type="submit">提交</button></br></br>
+                <!--div class="error"><span>+</span></div-->
+            </form>
+            <!--div class="connect">
+                <p>Or connect with:</p>
+                <p>
+                    <a class="facebook" href=""></a>
+                    <a class="twitter" href=""></a>
+                </p>
+            </div-->
+        </div>
+
+        <!-- Javascript -->
+        <script src="/static/www/js/jquery-1.8.2.min.js"></script>
+        <script src="/static/www/js/supersized.3.2.7.min.js"></script>
+        <script src="/static/www/js/supersized-init.js"></script>
+        <script src="/static/www/js/scripts.js"></script>
+
+    </body>
+
+</html>

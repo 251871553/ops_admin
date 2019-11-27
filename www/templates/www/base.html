@@ -84,22 +84,22 @@
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a onclick="xadmin.add_tab('统计页面','welcome1.html')">
+                                <a onclick="xadmin.add_tab('统计页面','{% url 'www:welcome' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>统计页面</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('会员列表(静态表格)','member-list.html')">
+                                <a onclick="xadmin.add_tab('会员列表(静态表格)','{% url 'www:会员列表静态表格' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>会员列表(静态表格)</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('会员列表(动态表格)','member-list1.html',true)">
+                                <a onclick="xadmin.add_tab('会员列表(动态表格)','{% url 'www:会员列表动态表格' %}',true)">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>会员列表(动态表格)</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('会员删除','member-del.html')">
+                                <a onclick="xadmin.add_tab('会员删除','{% url 'www:会员删除' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>会员删除</cite></a>
                             </li>
@@ -110,12 +110,12 @@
                                     <i class="iconfont nav_right">&#xe697;</i></a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a onclick="xadmin.add_tab('会员删除','member-del.html')">
+                                        <a onclick="xadmin.add_tab('会员删除','{% url 'www:会员删除' %}')">
                                             <i class="iconfont">&#xe6a7;</i>
                                             <cite>会员删除</cite></a>
                                     </li>
                                     <li>
-                                        <a onclick="xadmin.add_tab('等级管理','member-list1.html')">
+                                        <a onclick="xadmin.add_tab('等级管理','{% url 'www:等级管理' %}')">
                                             <i class="iconfont">&#xe6a7;</i>
                                             <cite>等级管理</cite></a>
                                     </li>
@@ -126,16 +126,16 @@
                     <li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="订单管理">&#xe723;</i>
-                            <cite>域名管理</cite>
+                            <cite>订单管理</cite>
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a onclick="xadmin.add_tab('订单列表','order-list.html')">
+                                <a onclick="xadmin.add_tab('订单列表','{% url 'www:订单列表' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>订单列表</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('订单列表1','order-list1.html')">
+                                <a onclick="xadmin.add_tab('订单列表1','{% url 'www:订单列表1' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>订单列表1</cite></a>
                             </li>
@@ -148,7 +148,7 @@
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a onclick="xadmin.add_tab('多级分类','cate.html')">
+                                <a onclick="xadmin.add_tab('多级分类','{% url 'www:多级分类' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>多级分类</cite></a>
                             </li>
@@ -161,7 +161,7 @@
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a onclick="xadmin.add_tab('三级地区联动','city.html')">
+                                <a onclick="xadmin.add_tab('三级地区联动','{% url 'www:三级地区联动' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>三级地区联动</cite></a>
                             </li>
@@ -174,22 +174,22 @@
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a onclick="xadmin.add_tab('管理员列表','admin-list.html')">
+                                <a onclick="xadmin.add_tab('管理员列表','{% url 'www:管理员列表' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>管理员列表</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('角色管理','admin-role.html')">
+                                <a onclick="xadmin.add_tab('角色管理','{% url 'www:角色管理' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>角色管理</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('权限分类','admin-cate.html')">
+                                <a onclick="xadmin.add_tab('权限分类','{% url 'www:权限分类' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>权限分类</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('权限管理','admin-rule.html')">
+                                <a onclick="xadmin.add_tab('权限管理','{% url 'www:权限管理' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>权限管理</cite></a>
                             </li>

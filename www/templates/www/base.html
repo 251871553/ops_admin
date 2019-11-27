@@ -27,7 +27,7 @@
         <!-- 顶部开始 -->
         <div class="container">
             <div class="logo">
-                <a href="./index.html">X-admin v2.2</a></div>
+                <a href="{% url 'www:home' %}">Home</a></div>
             <div class="left_open">
                 <a><i title="展开左侧栏" class="iconfont">&#xe699;</i></a>
             </div>
@@ -80,7 +80,7 @@
                     <li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="会员管理">&#xe6b8;</i>
-                            <cite>会员管理</cite>
+                            <cite>web管理</cite>
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -126,7 +126,7 @@
                     <li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="订单管理">&#xe723;</i>
-                            <cite>订单管理</cite>
+                            <cite>域名管理</cite>
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
@@ -202,42 +202,42 @@
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a onclick="xadmin.add_tab('拆线图','echarts1.html')">
+                                <a onclick="xadmin.add_tab('拆线图','{% url 'www:拆线图1' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
-                                    <cite>拆线图</cite></a>
+                                    <cite>拆线图1</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('拆线图','echarts2.html')">
+                                <a onclick="xadmin.add_tab('拆线图','{% url 'www:拆线图2' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
-                                    <cite>拆线图</cite></a>
+                                    <cite>拆线图2</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('地图','echarts3.html')">
+                                <a onclick="xadmin.add_tab('地图','{% url 'www:地图' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>地图</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('饼图','echarts4.html')">
+                                <a onclick="xadmin.add_tab('饼图','{% url 'www:饼图' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>饼图</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('雷达图','echarts5.html')">
+                                <a onclick="xadmin.add_tab('雷达图','{% url 'www:雷达图' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>雷达图</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('k线图','echarts6.html')">
+                                <a onclick="xadmin.add_tab('k线图','{% url 'www:k线图' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>k线图</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('热力图','echarts7.html')">
+                                <a onclick="xadmin.add_tab('热力图','{% url 'www:热力图' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>热力图</cite></a>
                             </li>
                             <li>
-                                <a onclick="xadmin.add_tab('仪表图','echarts8.html')">
+                                <a onclick="xadmin.add_tab('仪表图','{% url 'www:Meter' %}')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>仪表图</cite></a>
                             </li>
@@ -263,9 +263,16 @@
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="{% url 'www:dump' %}" target="_blank">
+                                <!--a href="{% url 'www:dump' %}" >
                                     <i class="iconfont">&#xe6a7;</i>
-                                    <cite>jstack导出</cite></a>
+                                    <cite>jstack导出</cite></a-->
+
+                                 <a onclick="xadmin.add_tab('jstack','{% url 'www:k8s' %}')">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>jstack</cite></a>
+
+
+
                             </li>
                             <li>
                                 <a href="login.html" target="_blank">
@@ -350,7 +357,7 @@
                         <dd data-type="all">关闭全部</dd></dl>
                 </div>
                 <div class="layui-tab-content">
-                    <div class="layui-tab-item layui-show">
+                    <div class="layui-tab-item layui-show"
                        {% block frame %}
                           <!--p>original</p-->
                         <!--iframe src='welcome.html' frameborder="0" scrolling="yes" class="x-iframe"></iframe-->

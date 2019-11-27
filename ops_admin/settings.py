@@ -25,7 +25,7 @@ SECRET_KEY = 'qng-kq3p=g90npb+vz$9skrvmddyk(!u#@&+x01qy&78q9#by%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.45.24.134']
+ALLOWED_HOSTS = ['10.45.24.134', '10.45.24.11']
 
 
 # Application definition

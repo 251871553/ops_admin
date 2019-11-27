@@ -21,7 +21,7 @@
             <form action="{% url 'www:download' %}" method="post" enctype="multipart/form-data"  >
                 {% csrf_token %}
             <!--    {{uf.as_p}}   -->
-                 <p>选择需要下载的jstack文件</p>
+                 <p>左侧单选框选择需要下载的jstack文件</p>
                 {% for filename,filesize in file_list.items %}
                     <!--p>{{ file }}</p-->
 
@@ -40,10 +40,6 @@
                 </p>
             </div-->
         </div>
-
-
-
-
 
     </body>
 
